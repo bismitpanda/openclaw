@@ -4,7 +4,7 @@ services:
     runtime: docker
     plan: standard
     healthCheckPath: /health
-    dockerCommand: node openclaw.mjs gateway --allow-unconfigured --bind lan --port $PORT
+    dockerCommand: node openclaw.mjs gateway --bind lan --port $PORT
     envVars:
       - key: SETUP_PASSWORD
         sync: false
